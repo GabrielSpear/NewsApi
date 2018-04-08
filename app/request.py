@@ -94,3 +94,9 @@ def process_sources(articles_list):
         url = result.get('url')
         urlToImage = result.get('urlToImage')
         publishedAt = result.get('publishedAt')
+
+        if urlToImage:
+
+            news_object = Articles(id,name,author,title,description,url,urlToImage, publishedAt)
+            news_result.append(news_object)
+    return news_result
