@@ -1,3 +1,25 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro %} {% block content %}
+
 <head>
   <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 </head>
+
+<body>
+
+  <div class="allcontent">
+
+    <div id="content">
+
+      <img src="https://upload.wikimedia.org/wikipedia/it/8/8b/Rai-news-hd.png" alt="" style="  width: 100%;">
+      <blockquote class="blockquote blockquote-reverse" style="background-color: cyan;">
+        <p class="mb-0">I Welcome you all to one of the best news site there today. Here you can view all the news you missed, interested in or a story you are following.</p>
+        <footer class="blockquote-footer">created by Gabriel Gatumu
+          <cite title="Source Title"> Sensation</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</body>
+
+
+{% endblock%}
