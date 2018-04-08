@@ -1,7 +1,6 @@
 from flask import render_template
 from . import main
-
-
+from ..request import get_news,get_details
 #views
 
 
@@ -11,14 +10,21 @@ def index():
     function that returns index page
     '''
     message = 'hello world'
-    title = 'One of the best News Website in the world'
+    title = 'the best news website ever'
+
+    general_list = get_news('us', 'general')
+    business_list = get_news('us', 'business')
+    technology_list = get_news('us', 'technology')
+    sports_list = get_news('us', 'sports')
+    health_list = get_news('us', 'health')
+    science_list = get_news('us', 'science')
+    entertainment_list = get_news('us', 'entertainment')
+    test_args = 'Working!'
+    return render_template('index.html',general=general_list,business=business_list,technology=technology_list,sports=sports_list,health=health_list,science=science_list,entertainment=entertainment_list)
 
 
 
-
-
-
-    @main.route('/news/<id>')
+@main.route('/news/<id>')
 def news(id):
     """
     View articles page that returns the news article from a highlight
