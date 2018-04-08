@@ -35,3 +35,19 @@ def get_news(country,category):
             news_result = process_results(news_result_list)
 
     return news_result
+
+def process_results(news_list):
+    '''
+    function that takes in the movie results and transform them to a list
+    '''
+    news_result =[]
+
+    for news_item in news_list:
+        id = news_item.get('id')
+        name = news_item.get('name')
+        print(id)
+        title = news_item.get('title')
+        description = news_item.get('description')
+        url = news_item.get('url')
+        category = news_item.get('category')
+        country = news_item.get('country')
