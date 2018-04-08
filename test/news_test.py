@@ -14,3 +14,6 @@ class NewsTest(unittest.TestCase):
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_articles,Articles))
+
+if __name__ == '__name__':
+    unittest.main()
