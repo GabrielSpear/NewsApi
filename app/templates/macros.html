@@ -1,0 +1,51 @@
+{% macro displaySourceList(source_list) %} {% for source in source_list %}
+<style type="text/css">
+  .navbar {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+
+  .navbar {
+    font-size: 15px;
+    font-style: bold;
+    font-style: oblique;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    height: 2.6em;
+    border-radius: 60px;
+  }
+
+  .navbar.selected:hover {
+    background-color: cyan !important;
+    color: black;
+  }
+
+  .navbar:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+
+  .navbar {
+    position: relative;
+    top: -3px;
+  }
+
+  .navbar-default {
+    background-color: #672121;
+    border-color: #121212;
+  }
+
+  .alln {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #758471;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  }
