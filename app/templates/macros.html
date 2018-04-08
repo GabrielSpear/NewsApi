@@ -49,3 +49,22 @@
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
   }
+
+</style>
+<div class="col-md-3 col-xs-12 col-lg-3">
+  <div class="alln">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/news/{{source.id}}">{{source.name}}</a>
+        </a>
+      </div>
+    </nav>
+    <b>Click here to view all categories in our {{source.id}} channel </b>
+  </div>
+</div>
+{% endfor %} {% endmacro %} {% macro displayArticleList(articles_list) %} {% for article in articles_list %}
