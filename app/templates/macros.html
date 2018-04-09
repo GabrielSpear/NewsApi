@@ -52,7 +52,7 @@
 
 </style>
 <div class="col-md-3 col-xs-12 col-lg-3">
-  <div class="alln">
+  <div class="alln" style="background-color: cyan;">
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
@@ -64,7 +64,7 @@
         </a>
       </div>
     </nav>
-    <b>Click here to view all categories in our {{source.id}} channel </b>
+    <b>Click to view all categories in our {{source.id}} channel </b>
   </div>
 </div>
 {% endfor %} {% endmacro %} {% macro displayArticleList(articles_list) %} {% for article in articles_list %}
@@ -72,7 +72,7 @@
 
 
 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-  <div class="card ">
+  <div class="card " style="background-color: #1e59fc;">
     <div class="alln">
       <div class="hovereffect">
         <img class="card-img-top img-responsive" src="{{article.urlToImage}}" alt="Card image cap">

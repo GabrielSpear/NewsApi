@@ -23,6 +23,7 @@ def get_news(country,category):
     function of getting json response ro url
     '''
     get_news_url = base_url.format(country,category,api_key)
+    print(get_news_url)
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
